@@ -1,0 +1,21 @@
+body{
+  width:400px;
+  background-color:#09d57c;
+  margin:0;
+  font-family: monospace;
+  text-align: center;
+}
+
+input{
+  margin-left: 3px;
+  width:85%;
+  border-radius: 10px;
+}
+
+button{
+  width:90px;
+}
+
+.error{
+  color:red;
+}
