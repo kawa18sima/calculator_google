@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p v-if="error" class="error">Error</p>
+      <input type="text" disabled="disabled" v-model="text">
+      <table>
+        <tbody>
+          <tr v-for="view in views">
+            <th v-for="ele in view">
+              <button v-on:click="func(ele)">{{ele}}</button>
+            </th>
+        </tbody>
+      </table>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
